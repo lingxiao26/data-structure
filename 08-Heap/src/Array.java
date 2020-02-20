@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 //@SuppressWarnings("all")
@@ -10,6 +11,11 @@ public class Array<E> {
     public Array(int capacity) {
         data = (E[]) new Object[capacity];
         size = 0;
+    }
+
+    public Array(E[] arr) {
+        data = Arrays.copyOf(arr, arr.length);
+        size = arr.length;
     }
 
     // 初始化一个默认容量为10的数组
@@ -154,6 +160,13 @@ public class Array<E> {
             remEleIdx = find(e);
         }
 
+    }
+
+    // 交换索引为i,j的值
+    public void swap(int i, int j) {
+        E aux = data[i];
+        data[i] = data[j];
+        data[j] = aux;
     }
 
     // 判断索引是否合法

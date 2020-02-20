@@ -1,8 +1,5 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.Set;
-import java.util.TreeSet;
-
 /**
  * 350. 两个数组的交集 II
  *

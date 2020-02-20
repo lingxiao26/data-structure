@@ -17,7 +17,9 @@ public class Main {
         arr.addLast(5);
         System.out.println(arr);
 
-
+        System.out.println("=======set=========");
+        arr.set(0, 34);
+        System.out.println(arr);
 
     }
 }
