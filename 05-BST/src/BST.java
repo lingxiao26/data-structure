@@ -268,6 +268,16 @@ public class BST<E extends Comparable<E>> {
         }
     }
 
+    // 获取一个节点的后继节点(successor): 该节点右子树中最小的节点
+    private Node successor(Node node) {
+        return minimum(node.right);
+    }
+
+    // 获取一个节点的前驱节点(precursor): 该节点左子树中最大的节点
+    private Node precursor(Node node) {
+        return maxmum(node.left);
+    }
+
 
     @Override
     public String toString() {
