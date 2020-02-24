@@ -1,5 +1,9 @@
 import java.util.Arrays;
 
+/**
+ * 线段树是一棵平衡二叉树
+ * @param <E>
+ */
 public class SegmentTree<E> {
     private E[] data;
     private E[] tree;

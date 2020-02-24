@@ -1,5 +1,5 @@
 /**
- * 使用动态数组实现一个最大堆
+ * 使用动态数组实现一个最大堆(完全二叉树)
  */
 public class MaxHeap<E extends Comparable> {
 
