@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 /**
  * 303. 区域和检索 - 数组不可变
  给定一个整数数组  nums，求出数组从索引 i 到 j  (i ≤ j) 范围内元素的总和，包含 i,  j 两点。
@@ -27,8 +29,13 @@ class NumArray {
         }
     }
 
+
     public int sumRange(int i, int j) {
         return sum[j+1] - sum[i];
+    }
+
+    public static void main(String[] args) {
+        ArrayList<Object> list = new ArrayList<>();
     }
 }
 

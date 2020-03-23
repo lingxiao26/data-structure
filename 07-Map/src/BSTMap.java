@@ -160,5 +160,6 @@ public class BSTMap<K extends Comparable<K>, V> implements Map<K, V> {
         if (node == null)
             throw new IllegalArgumentException("set failed, " + key + " not exist");
         node.value = value;
+        
     }
 }

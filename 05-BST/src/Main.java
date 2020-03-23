@@ -32,4 +32,11 @@ public class Main {
         BST<Integer> bst = new BST<>(arr);
         System.out.println(bst.depth());
     }
+
+    @Test
+    public void testTraversal() {
+        Integer[] arr = {5, 3, 8, 2, 4, 7, 9};
+        BST<Integer> bst = new BST<>(arr);
+        bst.postOrder();
+    }
 }
